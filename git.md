@@ -1,8 +1,3 @@
-# git-notes
-Simple snippets with brief explanation of git commands I find super-useful
-
----
-
 Maybe add a bookmark on top with all the queries you are giving solution to so someone can move to the one they want.
 
 
@@ -71,4 +66,3 @@ To confirm:
 `git status`
 
 This will give a command of `fatal: Not a git repository (or any of the parent directories): .git`
-
