@@ -58,6 +58,16 @@ See [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork
 
 ---
 
+#### How to untracked a file/folder by git
+
+To remove a file or folde already tracked by git, then you must first remove it (physically, file or folder must be placed out of git folder for the time), commit changes and add the file again to folder. Then git will begin ignoring it using your instruction. 
+
+`git rm --cached <name of file/folder>`
+
+`git add .`
+
+---
+
 #### To delete a .git file from your repo so you can initialized git again: 
 `rm -rf .git`
 
