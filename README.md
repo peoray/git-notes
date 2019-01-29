@@ -3,6 +3,21 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 ---
 
+- [How to Delete a local branch](#to-delete-a-local-branch)
+
+- [How to Delete a remote branch](#to-delete-a-remote-branch)
+
+- [How to To remove remote origin from Git repository](#to-remove-remote-origin-from-git-repo)
+
+- [How to update a Github forked repository](#to-update-a-github-forked-repository)
+
+- [How to untrack a file by Git](#how-to-untrack-a-file-by-git)
+
+- [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
+
+
+---
+
 #### To delete a local branch:
 **N.B:You cannot delete the branch you are currently on.** 
 
@@ -58,7 +73,7 @@ See [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork
 
 ---
 
-#### How to untracked a file/folder by git
+#### How to untrack a file by git
 
 To remove a file or folde already tracked by git, then you must first remove it (physically, file or folder must be placed out of git folder for the time), commit changes and add the file again to folder. Then git will begin ignoring it using your instruction. 
 
@@ -68,7 +83,7 @@ To remove a file or folde already tracked by git, then you must first remove it 
 
 ---
 
-#### To delete a .git file from your repo so you can initialized git again: 
+#### To delete a git folder from your project:
 `rm -rf .git`
 
 This command will remove `.git` file from the directory. 
