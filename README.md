@@ -101,10 +101,13 @@ This will give a command of `fatal: Not a git repository (or any of the parent d
 #### To change a remote URL
 
 List your existing remote:
+
 `git remote -v`
 
 Then to change the existing to a new one:
+
 `git remote set-url origin [URL]`
 
 To confirm:
+
 `git remote -v`
