@@ -15,7 +15,7 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 - [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
 
-- [How to change a remote's URL](#to-change-a-remote's-url)
+- [How to change a remote's URL](#to-change-a-remote's-URL)
 
 
 ---
@@ -101,7 +101,6 @@ This will give a command of `fatal: Not a git repository (or any of the parent d
 #### To change a remote's URL
 
 List your existing remote:
-
 `git remote -v`
 
 Then to change the existing to a new one:
