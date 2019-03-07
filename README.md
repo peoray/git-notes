@@ -15,6 +15,8 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 - [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
 
+- [How to change a remote's URL](#to-change-a-remote's-url)
+
 
 ---
 
@@ -36,7 +38,7 @@ Then delete the branch you want:
 `git push --delete <remote_name> <branch_name>`
 
 ---
-### To remove remote origin from Git repo:
+#### To remove remote origin from Git repo:
 Instead of removing and re-adding, you can do this:
 
 `git remote set-url <origin> git://<new.url.here>`
@@ -94,3 +96,16 @@ To confirm:
 
 This will give a command of `fatal: Not a git repository (or any of the parent directories): .git`
 
+---
+
+#### To change a remote's URL
+
+List your existing remote:
+
+`git remote -v`
+
+Then to change the existing to a new one:
+`git remote set-url origin [URL]`
+
+To confirm:
+`git remote -v`
