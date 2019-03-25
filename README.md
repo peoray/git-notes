@@ -11,7 +11,7 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 - [How to update a Github forked repository](#to-update-a-github-forked-repository)
 
-- [How to untrack a file by Git](#how-to-untrack-a-file-by-git)
+- [How to untrack a directory/folder by Git](#how-to-untrack-a-directory-by-git)
 
 - [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
 
@@ -75,11 +75,11 @@ See [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork
 
 ---
 
-#### How to untrack a file by git
+#### How to untrack a directory by git
 
 To remove a file or folde already tracked by git, then you must first remove it (physically, file or folder must be placed out of git folder for the time), commit changes and add the file again to folder. Then git will begin ignoring it using your instruction. 
 
-`git rm --cached <name of file/folder>`
+`git rm -r <name of directory>`
 
 `git add .`
 
