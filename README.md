@@ -11,6 +11,8 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 - [How to update a Github forked repository](#to-update-a-github-forked-repository)
 
+- [How to untrack a file by Git](#how-to-untrack-a-file-by-git)
+  
 - [How to untrack a directory by Git](#how-to-untrack-a-directory-by-git)
 
 - [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
@@ -73,6 +75,12 @@ Updating your fork from original repo to keep up with their changes:
 `git merge upstream/master`
 
 See [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser) on how to update your forked repo via the browser.
+
+---
+
+#### How to untrack a file by git:
+
+`git rm --cached <file path>`
 
 ---
 
