@@ -1,22 +1,23 @@
 # git-notes
-Simple snippets with brief explanation of git commands I find super-useful and use almost daily.
+Simple snippets with brief explanation of git commands I find super-useful and use often.
 
 ---
 
-- [How to Delete a local branch](#to-delete-a-local-branch)
+- [How to delete a local branch](#to-delete-a-local-branch)
 
-- [How to Delete a remote branch](#to-delete-a-remote-branch)
+- [How to delete a remote branch](#to-delete-a-remote-branch)
 
-- [How to To remove remote origin from Git repository](#to-remove-remote-origin-from-git-repo)
+- [How to remove remote origin from Git repository](#to-remove-remote-origin-from-git-repo)
 
 - [How to update a Github forked repository](#to-update-a-github-forked-repository)
 
-- [How to untrack a directory/folder by Git](#how-to-untrack-a-directory-by-git)
+- [How to untrack a directory by Git](#how-to-untrack-a-directory-by-git)
 
 - [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
 
 - [How to change a remote's URL](#to-change-a-remote-url)
 
+- [How to force push a git repo](#to-force-push-a-git-repo)
 
 ---
 
@@ -75,13 +76,19 @@ See [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork
 
 ---
 
-#### How to untrack a directory by git
+#### How to untrack a directory by git:
 
 To remove a file or folde already tracked by git, then you must first remove it (physically, file or folder must be placed out of git folder for the time), commit changes and add the file again to folder. Then git will begin ignoring it using your instruction. 
 
-`git rm -r <name of directory>`
+**Step 1:** Add the folder path to your repo's root `.gitignore` file.
 
-`git add .`
+**Step 2:** Remove the folder from your local git tracking, but keep it on your disk.
+
+`git rm -r --cached <path_to_your_folder/>`
+
+**Step 3:** Add, commit and push your changes to your git repo.
+
+The folder will be considered "deleted" from Git's point of view (i.e. they are in past history, but not in the latest commit, and people pulling from this repo will get the files removed from their trees), but stay on your working directory because you've used --`cached`
 
 ---
 
@@ -98,7 +105,7 @@ This will give a command of `fatal: Not a git repository (or any of the parent d
 
 ---
 
-#### To change a remote URL
+#### To change a remote URL:
 
 List your existing remote:
 
@@ -111,3 +118,14 @@ Then to change the existing to a new one:
 To confirm:
 
 `git remote -v`
+
+---
+
+#### To force push a git repo:
+
+`git push --force <origin_name> <your_branch_name>`
+
+**Short flag**
+Also note that `-f` is short for `--force`, so
+
+`git push -f <origin_name> <your_branch_name>`
