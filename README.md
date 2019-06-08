@@ -34,6 +34,17 @@ Then delete the branch you want:
 
 `git branch -d <branch-name>`
 
+**NB:** If you haven't merged the branch you want to delete, you will get this error:
+
+```
+error: The branch 'slide' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D slide'.
+```
+
+To then force delete the branch that hasn't been merged yet:
+
+`git branch -D <branch-name>`
+
 ---
 
 #### To delete a remote branch:
