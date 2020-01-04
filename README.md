@@ -21,6 +21,8 @@ Simple snippets with brief explanation of git commands I find super-useful and u
 
 - [How to force push a git repo](#to-force-push-a-git-repo)
 
+- [How to remove files from git that has been already been deleted from disk](#remove-files-from-git-that-have-already-been-deleted-from-disk)
+
 ---
 
 #### To delete a local branch:
@@ -148,3 +150,19 @@ To confirm:
 Also note that `-f` is short for `--force`, so
 
 `git push -f <origin_name> <your_branch_name>`
+
+---
+
+### Remove files from git that have already been deleted from disk
+
+
+This tells git to automatically stage tracked files -- including deleting the previously tracked files.
+
+To stage your whole working tree:
+
+`git add -u :/`
+
+To stage just the current path:
+
+`git add -u .`
+
