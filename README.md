@@ -1,27 +1,29 @@
 # git-notes
-Simple snippets with brief explanation of git commands I find super-useful and use often.
+
+Simple snippets with brief explanation of git commands I find super useful and use often.
 
 ---
+## Table of Content
 
-- [How to delete a local branch](#to-delete-a-local-branch)
+1. [How to delete a local branch](#to-delete-a-local-branch)
 
-- [How to delete a remote branch](#to-delete-a-remote-branch)
+1. [How to delete a remote branch](#to-delete-a-remote-branch)
 
-- [How to remove remote origin from Git repository](#to-remove-remote-origin-from-git-repo)
+1. [How to remove remote origin from Git repository](#to-remove-remote-origin-from-git-repo)
 
-- [How to update a Github forked repository](#to-update-a-github-forked-repository)
+1. [How to update a Github forked repository](#to-update-a-github-forked-repository)
 
-- [How to untrack a file by Git](#how-to-untrack-a-file-by-git)
+1. [How to untrack a file by Git](#how-to-untrack-a-file-by-git)
   
-- [How to untrack a directory by Git](#how-to-untrack-a-directory-by-git)
+1. [How to untrack a directory by Git](#how-to-untrack-a-directory-by-git)
 
-- [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
+1. [How to delete a .git folder from your project](#to-delete-a-git-folder-from-your-project)
 
-- [How to change a remote's URL](#to-change-a-remote-url)
+1. [How to change a remote's URL](#to-change-a-remote-url)
 
-- [How to force push a git repo](#to-force-push-a-git-repo)
+1. [How to force push a git repo](#to-force-push-a-git-repo)
 
-- [How to remove files from git that has been already been deleted from disk](#remove-files-from-git-that-have-already-been-deleted-from-disk)
+1. [How to remove files from git that has been already been deleted from disk](#remove-files-from-git-that-have-already-been-deleted-from-disk)
 
 ---
 
