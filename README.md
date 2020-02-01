@@ -2,7 +2,6 @@
 
 Simple snippets with brief explanation of git commands I find super useful and use often.
 
----
 ## Table of Content
 
 1. [How to delete a local branch](#to-delete-a-local-branch)
