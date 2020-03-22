@@ -24,6 +24,8 @@ Simple snippets with brief explanation of git commands I find super useful and u
 
 1. [How to remove files from git that has been already been deleted from disk](#remove-files-from-git-that-have-already-been-deleted-from-disk)
 
+1. [How to rename a local branch](#to-rename-a-local-git-branch)
+
 ---
 
 #### To delete a local branch:
@@ -154,7 +156,7 @@ Also note that `-f` is short for `--force`, so
 
 ---
 
-### Remove files from git that have already been deleted from disk
+#### Remove files from git that have already been deleted from disk
 
 
 This tells git to automatically stage tracked files -- including deleting the previously tracked files.
@@ -167,3 +169,12 @@ To stage just the current path:
 
 `git add -u .`
 
+---
+
+#### To Rename a local git branch
+
+If you're currently in the branch:
+`git branch -m <newname>`
+
+If you're in another branch:
+`git branch -m <oldname> <newname>`
