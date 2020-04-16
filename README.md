@@ -26,6 +26,8 @@ Simple snippets with brief explanation of git commands I find super useful and u
 
 1. [How to rename a local branch](#to-rename-a-local-git-branch)
 
+1. [How do I delete a Git branch locally and remotely?](#to-delete-a-git-branch-locally-and-remotely)
+
 ---
 
 #### To delete a local branch:
@@ -178,3 +180,33 @@ If you're currently in the branch:
 
 If you're in another branch:
 `git branch -m <oldname> <newname>`
+
+---
+
+#### To delete a Git branch locally and remotely
+
+**Delete Remote Branch**
+
+   ```
+    git push -d <remote_name> <branch_name>
+    git branch -d <branch_name>
+   ```
+
+Note that in most cases the remote name is origin. In such a case you'll have to use the command like so.
+
+    `git push -d origin <branch_name>`
+
+**Delete Local Branch**
+
+To delete the local branch use one of the following:
+
+```
+git branch -d branch_name
+git branch -D branch_nam
+```
+
+**Note:** The `-d` option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch. You could also use `-D`, which is an alias for `--delete --force`, which deletes the branch "irrespective of its merged status."
+
+Don't forget to do a `git fetch --all --prune` on other machines after deleting the remote branch on the server. After deleting the local branch with git branch -d and deleting the remote branch with git push origin --delete other machines may still have "obsolete tracking branches" (to see them do git branch -a). To get rid of these do:
+
+`git fetch --all --prune`
